@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoportrait</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!--La première page-->
+    <div class="fixed-bg bg-0">  
+        <section>
+            <h2>
+                <a href="">Mon</a>
+                <a href="">Portrait</a>
+                <a href="">Chinois</a>
+
+            </h2>
+        <!--les logo des réseaux sociaux-->
+        <ul class="medias">
+            <li class="boutonbulle"><img src="yt.svg" class="logo-medias"></li>
+            <li class="boutonbulle"><img src="insta.svg" class="logo-medias"></li>
+            <li class="boutonbulle"><img src="fb.svg" class="logo-medias"></li>
+        </ul>
+            <button onclick="scrollWin()"  class="button" href="portrait.html">COMMENCER</button>
+        </section>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+    </div> 
+<!--La deuxième page-->     
+    <div class="fixed-bg bg-2">        
+        <div class="boite1">
+             <h1>
+                <div class="liste-analogies1"></div>
+            </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+             <img src="truman.jpg" alt="">&nbsp;&nbsp;&nbsp;&nbsp; 
+             <button id="trumanPopup" class="trumanPopup">Découvrir</button> 
+             <!--arrière plan qui va avoir une couleur-->
+             <div id="truman_overlay" class="marimba_overlay">
+                <!--popup-->
+                <div id="truman" class="truman">                   
+                    <h1>
+                        Je serais "The Truman show"
+                        <!--bouton fermé-->
+                        <button id="trumanClose" class="trumanClose">X</button>
+                        <p style="color:white;">Parce que "The Truman Show" est un de mes films préférés. J'aime le scénario, il peut nous faire réfléchir sur notre société, où télévision et réseaux sociaux sont omniprésent. L'ayant vu une bonne dizaine de fois il me fait toujours autant d'effet. Jim Carrey incarne aussi à merveille bien le personnage "manipulé" du début à la fin, le héros de sa propre "téléréalité".</p>   
+                    </h1>        
+                </div>
+             </div>                   
+        </div>           
+    </div>  
+<!--La troisième page-->     
+    <div class="fixed-bg bg-3">  
+        <div class="boite1">
+             <h1>
+                <div class="liste-analogies2"></div>
+            </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+             <img src="marimba.jpg" alt="" style="width:300px;height:200px">&nbsp;&nbsp;&nbsp;&nbsp;  
+             <button id="marimbaPopup" class="marimbaPopup">Découvrir</button> 
+
+             <!--arrière plan qui va avoir une couleur-->
+             <div id="marimba_overlay" class="marimba_overlay">
+                <!--popup-->
+                <div id="marimba" class="marimba">
+                    
+                    <h1>
+                        Je serais "le marimba"
+                        <!--bouton fermé-->
+                       
+                        <button id="marimbaClose" class="marimbaClose">X</button>
+                        <p style="color:white;">Parce qu'étudiante au conservatoire en classe de percussions depuis l'école primaire, j'ai pu connaître et jouer sur les instruments de cette grande famille. Celui que je préfére le plus est le marimba. Je l'apprécie par son son, sa beauté mais aussi sa douceur. Si j'avais le moyen d'en avoir plusieurs chez moi je n'hésiterai pas une seule seconde ! </p>
+                        <audio src="marimba.mp3" controls type="audio/mp3"></audio>
+                        
+                    </h1>
+                    
+                    
+                </div>
+             </div>      
+        </div>  
+        
+             
+    </div>
+<!--La quatrième page-->     
+    <div class="fixed-bg bg-4">  
+        <div class="boite1">
+             <h1>
+                <div class="liste-analogies3"></div>
+            </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <img src="automne.jpg" alt="" style="width:300px;height:200px">&nbsp;&nbsp;&nbsp;    
+             <button id="automnePopup"class="automnePopup">Découvrir</button>
+             <div id="automne_overlay" class="automne_overlay">
+                <!--popup-->
+                <div id="automne" class="automne">
+                    
+                    <h1>
+                        Je serais "l'Automne"
+                        <!--bouton fermé-->
+                       
+                        <button id="automneClose" class="automneClose">X</button>
+                        <p style="color:white;">Parce que je suis née au mois de Novembre. J'aime cette saison car on y voit de nombreuses couleurs. La couleur des feuilles sur les arbres varient entre jaune, rouge et orange. Les feuilles au sol forment comme des immenses tapis naturel, et l'odeur de l'humidité, de la pluie, des cheminés rendent cette période chaleureuse malgré le froid et la grisaille.</p>                        
+                    </h1>                   
+                </div>
+             </div>    
+        </div>              
+    </div>
+    
+<!--La cinquième page-->    
+    <div class="fixed-bg bg-5">  
+        <div class="boite1">
+             <h1>
+                <div class="liste-analogies4"></div>
+            </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <img src="henri.jpg" alt="" style="width:300px;height:200px">&nbsp;&nbsp;&nbsp;
+             <button id="photoPopup"class="photoPopup">Découvrir</button>
+             <div id="photo_overlay" class="photo_overlay">
+                <!--popup-->
+                <div id="photo" class="photo">
+                    
+                    <h1>
+                        Je serais "Henri Cartier Bresson"
+                        <!--bouton fermé-->
+                       
+                        <button id="photoClose" class="photoClose">X</button>
+                        <p style="color:white;">Parce que je m'intéresse beaucoup à la photographie, à l'image, et particulièrement à la photographie en noir et blanc. Je trouve que malgré l'absence de couleur elles nous apportent beaucoup plus d'émotion ou autant d'émotion qu'une photo en couleur. Mon photographe préféré reste de loin Henri Cartier Bresson, grand photographe du XXème siècle.</p>                        
+                    </h1>                                     
+               </div>
+             </div>               
+        </div>             
+    </div>
+    
+<!--La sixième page-->    
+    <div class="fixed-bg bg-6">  
+        <div class="boite1">
+             <h1>
+                <div class="liste-analogies5"></div>
+            </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <img src="normandie.jpg" alt="" style="width:300px;height:200px"> &nbsp;&nbsp;&nbsp; 
+             <button id="normandiePopup"class="normandiePopup">Découvrir</button>
+             <div id="normandie_overlay" class="normandie_overlay">
+                <!--popup-->
+                <div id="normandie" class="normandie">
+                    
+                    <h1>
+                        Je serais "la Normandie"
+                        <!--bouton fermé-->
+                       
+                        <button id="normandieClose" class="normandieClose">X</button>
+                        <p style="color:white;">Parce que la Normandie n'est pas très loin d'où j'habite, seulement 2 ou 3 heures, dès que j'en ai l'occasion j'y vais avec ma famille. C'est une région de France que je ne connaissais pas avant 2020. Elle m'a beaucoup charmé par ses grandes falaises, ses grandes plages, et sa nature me fascine. C'est également un lieu d'histoire et de mémoire de notre XXème siècle.</p>                        
+                    </h1>                   
+                </div>
+             </div>         
+        </div>             
+    </div>
+   
+
+<!--La septième page-->    
+    <div class="fixed-bg bg-7">  
+        <div class="boite1">
+             <h1>
+                <div class="liste-analogies6"></div>
+            </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <img src="scène.jpg" alt="" style="width:300px;height:200px">&nbsp;&nbsp;&nbsp;  
+             <button id="scènePopup"class="scènePopup">Découvrir</button>
+             <div id="scène_overlay" class="scène_overlay">
+                <!--popup-->
+                <div id="scène" class="scène">
+                    
+                    <h1>
+                        Je serais "le théâtre"
+                        <!--bouton fermé-->
+                       
+                        <button id="scèneClose" class="scèneClose">X</button>
+                        <p style="color:white;">Parce que le théâtre est autant divertissant que le cinéma pour moi. En particulier les pièces comiques. Je passe régulièrement mon temps au théatre durant les vacances ou les fêtes. Ce sont de très bon moment de détente et de diverissement que je passe seul ou accompagné.</p>                       
+                    </h1>                   
+                </div>
+             </div>                  
+        </div>             
+    </div>
+    
+<!--La huitième page-->    
+    <div class="fixed-bg bg-8">  
+        <div class="boite1">
+             <h1>
+                <div class="liste-analogies7"></div>
+            </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <img src="angele.jpg" alt="" style="width:300px;height:200px">&nbsp;&nbsp;&nbsp;              
+             <button id="angelePopup"class="angelePopup">Découvrir</button>
+             <div id="angele_overlay" class="angele_overlay">
+                <!--popup-->
+                <div id="angele" class="angele">
+                    
+                    <h1>
+                        Je serais "Angèle van Laeken"
+                        <!--bouton fermé-->
+                       
+                        <button id="angeleClose" class="angeleClose">X</button>
+                        <p style="color:white;">Parce que j'aime beaucoup sa voix, son style et ses chansons et à chaque sortie d'album j'écoute ses musiques en boucle. Elle incarne, pour moi, une des meilleures chanteuse de pop que je connaisse aujourd'hui et je ne pourrai cesser de l'écouter. </p>
+                        <audio src="angele.mp3" controls type="audio/mp3"></audio>                       
+                    </h1>                   
+                </div>
+             </div>    
+        </div>                    
+    </div>
+    
+<!--Création du formulaire-->
+    <div class="fixed-bg bg-9">
+        <div class="formulaire">
+            <form>
+                <h2>À toi de jouer le jeu, fais ton propre portrait Chinois !</h2>
+                <!--required dans le css-->
+                <fieldset>
+                    <legend>Renseignez votre identité</legend>&nbsp;&nbsp;&nbsp;
+                    <label for="nom">Nom*</label> 
+                    <input type="text" id="nom" name="nom" required>
+                    <br><br>
+                    <label for="prenom">Prénom*</label>&nbsp;&nbsp;&nbsp; 
+                    <input type="text" id="prenom" name="prenom" required>
+                    <br><br>
+                    <label for="email">Adresse mail*</label>&nbsp;&nbsp;&nbsp; 
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="email">Avez-vous déja fait un portrait Chinois ?</label>&nbsp;&nbsp;&nbsp; 
+                    <input type="radio" id="choix" name="choix" required>Oui
+                    <input type="radio" id="choix" name="choix" required>Non    
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Proposes 4 analogies</legend>
+                    <label for="analogie1">Si j'étais (Analogie)...&nbsp;&nbsp;&nbsp; </label><input type="text" id="analogie1" name="analogie1" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="valeurAnalogie1">Je serais...&nbsp;&nbsp;&nbsp; </label><input type="text" id="valeurAnalogie1" name="valeurAnalogie1" required>                 
+                    
+                    <br><br> 
+                    <label for="analogie2">Si j'étais (Analogie)...&nbsp;&nbsp;&nbsp; </label><input type="text" id="analogie2" name="analogie2" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <label for="valeurAnalogie2">Je serais...&nbsp;&nbsp;&nbsp; </label><input type="text" id="valeurAnalogie2" name="valeurAnalogie2" required>
+                    <br><br> 
+                    <label for="analogie3">Si j'étais (Analogie)...&nbsp;&nbsp;&nbsp; </label><input type="text" id="analogie3" name="analogie3" required>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="valeurAnalogie3">Je serais...&nbsp;&nbsp;&nbsp; </label><input type="text" id="valeurAnalogie3" name="valeurAnalogie3" required>
+                    <br><br> 
+                    <label for="analogie4">Si j'étais (Analogie)...&nbsp;&nbsp;&nbsp; </label><input type="text" id="analogie4" name="analogie4" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <label for="valeurAnalogie4">Je serais...&nbsp;&nbsp;&nbsp; </label><input type="text" id="valeurAnalogie4" name="valeurAnalogie4" required>
+                       
+                </fieldset>
+                
+                <br>
+                <!--bouton envoyer le formulaire-->
+                <input type="submit"  id="envoi" value="Envoyer le formulaire" class="button2">
+               
+                
+  
+            </form>
+            
+      
+            
+        </div>
+        <!--<div id="messageApresEnvoi"></div> -->
+        <div id="messageApresEnvoi"></div>
+                
+        <a href="#" class="haut">Retour en haut ↑</a> 
+             
+    </div>
+  
+
+
+    <!--La dernière page des mentions légales-->
+    <div class="mention bg-10">
+        <footer>               
+                <h2>Mentions légales</h2>
+                    <ul class="footer1">                  
+                        <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Textarea">MDN</li></a>
+                        <li><a href="https://www.youtube.com/">Youtube</li></a>                   
+                    </ul> 
+                   
+                    <p class=footer3>©Nahina Boireau&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Janvier 2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nahina.boireau@gmail.com</p>
+
+        <p class="copyright">©Nahina Boireau 2022</p> 
+        </footer>           
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

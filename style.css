@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    
+}
+/*permet de faire un défilment fluide de la page*/
+html {
+    scroll-behavior: smooth;
+   
+  }
+
+/*gérer le style du texte*/
+h2{
+    font-size:2.3em;
+    font-family:'Lobster', cursive;
+}
+
+
+
+/*gérer l'effet sur le "Mon Portrait Chinois"*/
+div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: black;
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+    text-decoration:none;
+    border: 3px solid black;
+    padding-left: 20px;
+    padding-right:20px;
+    transition: all 1s ease;
+}
+
+a:hover {
+    background-color: black;
+    color:white;
+}
+
+
+/************GESTION DES FOND D'ECRAN*******/
+.fixed-bg {
+    background-size: cover;
+    background-attachment:initial;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    
+}
+
+
+/*gérer les différents fond d'écran*/
+.bg-0, .bg-1 {
+    background-color:#48212A;
+    border:6px solid black;
+}
+
+.bg-2{
+    background-image: url("film.jpg");
+}
+
+.bg-3{
+    background-image: url("musique.jpg");
+}
+
+.bg-4{
+    background-image: url("foret.jpg");
+}
+
+.bg-5{
+    background-image: url("photographie.jpg");
+}
+
+.bg-6{
+    background-image: url("carte.jpg");
+}
+
+.bg-7{
+    background-image: url("theatre.jpg");
+}
+
+.bg-8{
+    background-image: url("chanson.jpg");
+}
+
+.bg-9{
+    background-color:#48212A;
+    
+}
+
+.bg-10{
+    background-color:rgb(59, 22, 30);
+
+}
+
+/*dernier fond d'écran pour les mentions légales*/
+.mention {
+    background-size: cover;
+    background-attachment:initial;
+
+    display: flex;
+    height: 400px;
+    border:5px solid black;
+}
+
+
+/******GESTION DES BOITES*******/
+.boite {
+    font-family:'Lobster', cursive;
+    font-size:1em;
+    width:fit-content;
+    width:-moz-fit-content;
+       
+}    
+
+.boite0{
+    
+    padding-right:3em;
+    padding-left:3em;
+    padding-bottom:3em;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:5px;
+}    
+
+.boite1 {
+    width:60em;
+    height:30em;
+    margin:0 auto;
+    background-color:#48212A; 
+    box-shadow:50px 30px #5A2935 ;  
+}
+    
+
+/*****GESTION DU FORMULAIRE******/
+.formulaire{
+   
+    width:900px;
+    height:700px;
+    margin:auto;
+    background-color:#5A2935;
+    border:6px solid black;
+    border-radius:20px;
+    
+}
+
+fieldset{
+    border-color:black;
+    border-left:8px solid black;
+    border-radius:10px;
+    
+}
+
+legend{
+    font-family:'Lobster', cursive;
+    font-size:1.5em;
+}
+
+label{
+    font-family:'Lobster', cursive;
+    color:rgb(220, 109, 109);
+    
+}
+
+/*****GESTION DES BOUTONS******/
+/*bouton COMMENCER */
+.button{
+    background-color:#5A2935 ;
+    border:none;
+    color:black;
+    padding:15px;
+    font-family:'Lobster', cursive;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:1em;
+    margin:4px 2px;
+    border-radius:2rem;
+      /*avoir la souris qui se met quand je clique dessus*/
+    cursor:pointer;   
+}
+
+button:hover {
+    background-color: white;
+    color:black;
+    transition: all 1s ease;
+}
+
+/*bouton revenir en haut de page*/
+.haut{
+    background-color:black ;
+    border:none;
+    color:white;
+    padding:15px;
+    font-family:'Lobster', cursive;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:1em;
+    margin:4px 2px;
+    border-radius:2rem;
+    cursor:pointer;   
+}
+.haut:hover {
+    background-color: white;
+    color:black;
+    transition: all 1s ease;
+}
+
+/*bouton envoyer formulaire*/
+.button2 {
+    background-color:rgb(220, 109, 109) ;
+    border:none;
+    color:black;
+    padding:15px;
+    font-family:'Lobster', cursive;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:1em;
+    margin:4px 2px;
+    border-radius:2rem;
+    cursor:pointer;   
+}
+.button2:hover {
+    background-color: white;
+    color:black;
+    transition: all 1s ease;
+}
+
+
+/*bouton des popup*/
+.trumanPopup, .marimbaPopup, .automnePopup, .photoPopup, .normandiePopup, .scènePopup, .angelePopup{   
+    background-color:#5A2935 ;
+    border:none;
+    color:black;
+    padding:15px;
+    font-family:'Lobster', cursive;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:1em;
+    margin:4px 2px;
+    border-radius:2rem;
+    cursor:pointer;
+
+}
+.trumanPopup:hover {
+    background-color: white;
+    color:black;
+    transition: all 1s ease;
+}
+
+/*bouton réseaux sociaux*/
+.medias{
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.boutonbulle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background-color:#5A2935;
+    cursor: pointer;
+    position: relative;
+}
+.logo-medias {
+    width: 40px;
+    height: 40px;
+}
+.boutonbulle:hover {
+    background-color:white;
+    color:#48212A;
+    transition: all 1s ease;
+}
+
+/*le bouton fermé des popup*/
+.trumanClose, .marimbaClose, .automneClose, .photoClose, .normandieClose, .scèneClose, .angeleClose{
+    border:none;
+    padding:4px 8px;
+    border-radius:5px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    cursor:pointer;
+    background-color:rgb(117, 12, 12);   
+}
+
+/***GESTION DES POPUP******/
+/*arrière plan grisé de la popup*/
+.truman_overlay, .marimba_overlay, .automne_overlay, .photo_overlay, .normandie_overlay, .scène_overlay, .angele_overlay{  
+    left:0px;
+    top:0px;
+    position:fixed;
+    background-color:#322828d3;
+    width:100%;
+    height:100%;
+    display:none
+}
+
+/*le contenu de la popup*/
+.truman, .marimba, .automne, .photo, .normandie, .scène, .angele{   
+    width:600px;
+    height:300px;
+    padding:30px;
+    position:absolute;
+    top:29%;
+    left:29%;
+    text-align:center;
+    background-color:#48212A;
+    border-radius:10px;    
+}
+.truman h1, .marimba h1, .automne h1, .photo h1, .normandie h1, .scène h1, .angele h1{
+    margin-bottom:10px;
+    font-family:'Lobster', cursive;
+    font-weight:500;
+    font-size:1.5em;
+    
+}
+
+
+/****GESTION DES MENTIONS LEGALES*******/
+
+.copyright{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    font-family:'Lobster', cursive;
+
+}
+
+.footer1, .footer2, .footer3{
+    font-family:'Lobster', cursive;
+    font-size:1em;
+    float:right;
+
+}
+
